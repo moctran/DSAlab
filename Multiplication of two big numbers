@@ -1,7 +1,7 @@
 //Multiplication of two big numbers
 #include <stdio.h>
 #include <string.h>
-#include <stdio_ext.h>
+
 #define N 1000
 char a[N], b[N]; //The initial strings to read the input
 int x[N], y[N]; //Convert the inputed strings into two integer arrays (reverse order)
@@ -10,9 +10,7 @@ int i, j, temp;
 int main(void)
 {
     scanf("%s", a);
-    __fpurge(stdin);
     scanf("%s", b);
-    __fpurge(stdin);
     for(i = strlen(a)-1, j=0; i>=0; i--, j++)
     {
         x[j] = a[i] - '0';
